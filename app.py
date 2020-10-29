@@ -58,7 +58,7 @@ df_pcts /= 1000000
 
 df_pcts.plot(legend='upper left')
 plt.gcf().set_size_inches(8, 10)
-plt.title(f'Salaries for {choices[position]} ({len(focus)} players)', fontsize=20)
+plt.title(f'Salaries for {choices[position]}, {first_year}-{last_year} ({len(focus)} players)', fontsize=20)
 plt.xticks(df_pcts.index, rotation=90)
 plt.ylabel('Salary percentiles in $1M', fontsize=14)
 plt.xlabel(None)
