@@ -36,9 +36,9 @@ choices = {'P': 'Pitcher',
 
 position = st.sidebar.selectbox('Select Position:', options=list(choices.keys()), format_func=full_position_names)
 
-just_2000s = (df.year >= first_year) & (df.year <= last_year)
-just_third_base = df.pos == position
-focus = df[just_2000s & just_third_base]
+year_range = (df.year >= first_year) & (df.year <= last_year)
+this_position = df.pos == position
+focus = df[year_range & this_position]
 
 years = range(first_year, last_year + 1)
 
