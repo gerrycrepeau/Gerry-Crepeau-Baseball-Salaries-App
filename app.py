@@ -20,7 +20,7 @@ df = load_baseball_data()
 
 st.title('Major League Baseball Player Salaries')
 
-first_year, last_year = st.sidebar.slider('Select the First Year:', 1988, 2016, (2000, 2011), 1)
+first_year, last_year = st.sidebar.slider('Select the Years to Look At:', 1988, 2016, (2000, 2011), 1)
 
 choices = {'P': 'Pitcher',
            'C': 'Catcher',
